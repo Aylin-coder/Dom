@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #B19CD9 !important;
+        }
+        .btn-custom {
+            background-color: #9B7EBD;
+            border-color: #9B7EBD;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #8A6FB0;
+            border-color: #8A6FB0;
+        }
+        .btn-custom-secondary {
+            background-color: #C8A2C8;
+            border-color: #C8A2C8;
+            color: #4B0082;
+        }
+        .btn-custom-secondary:hover {
+            background-color: #B19CD9;
+            border-color: #B19CD9;
+        }
+        .card-header {
+            background-color: #D8BFD8;
+            color: #4B0082;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="user.html">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Perfil de Usuario -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Perfil de Usuario</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <!-- Imagen del usuario -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTwSB_iavduywc7U7Z4vcbaf3fRYD9ozzW-A&s" alt="Foto de perfil" class="rounded-circle mb-3" width="150" height="150">
+                        
+                        <!-- Información del usuario -->
+                        <div class="user-info">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Nombre:</label>
+                                <p class="form-control-plaintext">Aylin Melendez Juan</p>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Correo electrónico:</label>
+                                <p class="form-control-plaintext">aylinmjt10@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Botones de acción -->
+                        <div class="mt-4">
+                            <button class="btn btn-custom-secondary me-2">Editar Perfil</button>
+                            <button class="btn btn-custom">Cerrar Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
